@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Projets3</display-name>
+ 	<servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>org.projet.servlets.Login</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>org.projet.servlets.Logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProprietaireServlet</servlet-name>
+        <servlet-class>org.projet.servlets.ProprietaireServlet</servlet-class>
+           <multipart-config>
+            <location>/Projets3/WebContent/images</location> <!-- A adapter chez vous -->
+            <max-file-size>10485760</max-file-size> <!-- 10 Mo -->
+            <max-request-size>52428800</max-request-size> <!-- 5 x 10 Mo -->
+            <file-size-threshold>1048576</file-size-threshold> <!-- 1 Mo -->
+        </multipart-config>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>ProprietaireServlet</servlet-name>
+    	 
+    	  <url-pattern>/ProprietaireServlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>UpdateProfile</servlet-name>
+        <servlet-class>org.projet.servlets.UpdateProfile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>UpdateProfile</servlet-name>
+    	  <url-pattern>/UpdateProfile</url-pattern>
+    </servlet-mapping>
+        <servlet>
+        <servlet-name>UpdateLogement</servlet-name>
+        <servlet-class>org.projet.servlets.UpdateLogement</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>UpdateLogement</servlet-name>
+    	  <url-pattern>/UpdateLogement</url-pattern>
+    </servlet-mapping>
+ <servlet>
+        <servlet-name>Test</servlet-name>
+        <servlet-class>org.projet.servlets.Test</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>Test</servlet-name>
+    	  <url-pattern>/Test</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>LogementServlet</servlet-name>
+        <servlet-class>org.projet.servlets.LogementServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>LogementServlet</servlet-name>
+    	  <url-pattern>/LogementServlet</url-pattern>
+    </servlet-mapping>
+ 
+ <servlet>
+        <servlet-name>FindLogement</servlet-name>
+        <servlet-class>org.projet.servlets.FindLogement</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>FindLogement</servlet-name>
+    	  <url-pattern>/FindLogement</url-pattern>
+    </servlet-mapping>  
+    
+ <servlet>
+        <servlet-name>FindProprietaire</servlet-name>
+        <servlet-class>org.projet.servlets.FindProprietaire</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>FindProprietaire</servlet-name>
+    	  <url-pattern>/FindProprietaire</url-pattern>
+    </servlet-mapping>    
+   <servlet>
+ <servlet-name>ReservationServlet</servlet-name>
+        <servlet-class>org.projet.servlets.ReservationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>ReservationServlet</servlet-name>
+    	  <url-pattern>/ReservationServlet</url-pattern>
+    </servlet-mapping>    
+  <servlet>
+ <servlet-name>UpdateStatut</servlet-name>
+        <servlet-class>org.projet.servlets.UpdateStatut</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>UpdateStatut</servlet-name>
+    	  <url-pattern>/UpdateStatut</url-pattern>
+    </servlet-mapping>    
+  
+     <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>Login</welcome-file>
+    <welcome-file>Logout</welcome-file>
+    <welcome-file>home.jsp</welcome-file>
+    <welcome-file>home_proprietaire.jsp</welcome-file>
+    <welcome-file>ViewProfile.jsp</welcome-file>
+  </welcome-file-list>
+  
+
+</web-app>
+
