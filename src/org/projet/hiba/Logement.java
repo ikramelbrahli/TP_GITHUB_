@@ -1,4 +1,4 @@
-ackage org.projet.beans;
+ackage org.projet.beans; //EDIT!
 
 import java.util.Date;
 import java.util.List;
