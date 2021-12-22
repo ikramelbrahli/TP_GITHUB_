@@ -1,4 +1,4 @@
-ackage org.projet.beans; //EDIT tttt !
+ackage org.projet.beans; //EDIT hibahdmaster !
 
 import java.util.Date;
 import java.util.List;
