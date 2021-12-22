@@ -1,4 +1,4 @@
-ackage org.projet.beans; //EDIT m !
+package org.projet.beans; //EDIT m ! //Ikram editing
 
 import java.util.Date;
 import java.util.List;
