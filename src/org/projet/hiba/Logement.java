@@ -1,4 +1,4 @@
-ackage org.projet.beans; //EDIT hiba !
+ackage org.projet.beans; //EDIT hibahd !
 
 import java.util.Date;
 import java.util.List;
