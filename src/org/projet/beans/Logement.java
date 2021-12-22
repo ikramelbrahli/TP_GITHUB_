@@ -1,4 +1,4 @@
-ackage org.projet.beans;
+package org.projet.beans.something;
 
 import java.util.Date;
 import java.util.List;
