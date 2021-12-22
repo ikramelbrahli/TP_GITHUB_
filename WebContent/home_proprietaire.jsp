@@ -19,7 +19,7 @@
   <meta content="" name="description">
   
   
-  
+   <!-- Adding a comment to home prop -->
   
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -173,12 +173,12 @@
           </li>
           <li class="nav-item">
            <c:if test = "${user.statut == 'locataire'}" > 
-            <a class="nav-link active" href="${pageContext.request.contextPath}/ReservationServlet?action=ViewAllReservations&id=${user.id_user}">Réservations </a>
+            <a class="nav-link active" href="${pageContext.request.contextPath}/ReservationServlet?action=ViewAllReservations&id=${user.id_user}">Rï¿½servations </a>
              </c:if>
           </li>
            <li class="nav-item">
            <c:if test = "${user.statut == 'proprietaire'}" > 
-            <a class="nav-link active" href="${pageContext.request.contextPath}/ReservationServlet?action=ViewAllReservationsProp&id=${user.id_user}">Réservations </a>
+            <a class="nav-link active" href="${pageContext.request.contextPath}/ReservationServlet?action=ViewAllReservationsProp&id=${user.id_user}">Rï¿½servations </a>
              </c:if>
           </li>
       
@@ -190,7 +190,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
              <c:if test = "${user.statut == 'locataire'}" > 
                    <a class="nav-link active" href = "FindLogement.jsp">Chercher un logement</a>
-                   <a class="nav-link active" href = "FindProprietaire.jsp">Chercher un propriétaire</a>
+                   <a class="nav-link active" href = "FindProprietaire.jsp">Chercher un propriï¿½taire</a>
                </c:if>
                 <c:if test = "${user.statut == 'proprietaire'}" > 
                <a class="dropdown-item" href = "${pageContext.request.contextPath}/ProprietaireServlet?action=AddLogement&id=${user.id_user}">Publier une annonce</a> 
@@ -207,12 +207,12 @@
               <c:if test = "${user.statut == 'proprietaire'}" > 
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href = "${pageContext.request.contextPath}/ProprietaireServlet?action=ViewProfile&id=${user.id_user}">Voir profile</a>
-              <a class="dropdown-item" href = "${pageContext.request.contextPath}/ProprietaireServlet?action=UpdateProfile&id=${user.id_user}">Mettre à jour</a>
+              <a class="dropdown-item" href = "${pageContext.request.contextPath}/ProprietaireServlet?action=UpdateProfile&id=${user.id_user}">Mettre ï¿½ jour</a>
             </div>
              </c:if>
              <c:if test = "${user.statut == 'locataire'}" > 
               <a class="dropdown-item" href = "${pageContext.request.contextPath}/LocataireServlet?action=ViewProfile&id=${user.id_user}">Voir profile</a>
-              <a class="dropdown-item" href = "${pageContext.request.contextPath}/LocataireServlet?action=UpdateProfile&id=${user.id_user}">Mettre à jour</a>
+              <a class="dropdown-item" href = "${pageContext.request.contextPath}/LocataireServlet?action=UpdateProfile&id=${user.id_user}">Mettre ï¿½ jour</a>
             	 </c:if>
            </div>
           </li>
@@ -291,12 +291,12 @@
           <div class="card-box-c foo">
             <div class="card-header-c d-flex">
               <div class="card-title-c align-self-center">
-                <h2 class="title-c">Spécialisé en location,pas en vacances</h2>
+                <h2 class="title-c">Spï¿½cialisï¿½ en location,pas en vacances</h2>
               </div>
             </div>
             <div class="card-body-c">
               <p class="content-c">
-                Les locataires restent généralement des mois, pas des jours. Nous exigeons une vérification des locataires, soutenons les baux et les dépôts de garantie, et permettons aux locataires de trouver des colocataires pour les espaces à plusieurs lits
+                Les locataires restent gï¿½nï¿½ralement des mois, pas des jours. Nous exigeons une vï¿½rification des locataires, soutenons les baux et les dï¿½pï¿½ts de garantie, et permettons aux locataires de trouver des colocataires pour les espaces ï¿½ plusieurs lits
               </p>
             </div>
             <div class="card-footer-c">
@@ -310,12 +310,12 @@
           <div class="card-box-c foo">
             <div class="card-header-c d-flex">
               <div class="card-title-c align-self-center">
-                <h2 class="title-c">Au service d'une variété de locataires professionnels</h2>
+                <h2 class="title-c">Au service d'une variï¿½tï¿½ de locataires professionnels</h2>
               </div>
             </div>
             <div class="card-body-c">
               <p class="content-c">
-                Les locataires déménagent pour de nouvelles opportunités de travail ou d'éducation. Cela comprend les stagiaires, les infirmières de voyage, les étudiants diplômés et doctorants, les nomades numériques et les personnes qui déménagent dans une nouvelle ville.
+                Les locataires dï¿½mï¿½nagent pour de nouvelles opportunitï¿½s de travail ou d'ï¿½ducation. Cela comprend les stagiaires, les infirmiï¿½res de voyage, les ï¿½tudiants diplï¿½mï¿½s et doctorants, les nomades numï¿½riques et les personnes qui dï¿½mï¿½nagent dans une nouvelle ville.
               </p>
             </div>
             <div class="card-footer-c">
