@@ -9,7 +9,7 @@ private int nombre_pieces ;
 private String description ;
 private String [] equipement ;
 private String myList ;
-private String  regles ; //add
+private String  regles ; //add!!!!
 private String pays ;
 private String ville ;
 private String rue ;
