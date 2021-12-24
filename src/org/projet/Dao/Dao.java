@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ackage org.projet.beans; //EDIT hibahdmaster !
-=======
-package org.projet.beans; //EDIT m ! //Ikram editing
->>>>>>> c4049e965a40ff966ed08eaf62271f02690345c0
+package org.projet.beans.something;
 
 import java.util.Date;
 import java.util.List;
@@ -13,7 +9,7 @@ private int nombre_pieces ;
 private String description ;
 private String [] equipement ;
 private String myList ;
-private String  regles ; //add!!!!
+private String  regles ; 
 private String pays ;
 private String ville ;
 private String rue ;
