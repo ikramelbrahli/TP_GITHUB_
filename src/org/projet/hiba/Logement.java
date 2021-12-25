@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ackage org.projet.beans; //EDIT hibahdmaster !
+=======
+package org.projet.beans; //EDIT m ! //Ikram editing
+>>>>>>> c4049e965a40ff966ed08eaf62271f02690345c0
 
 import java.util.Date;
 import java.util.List;

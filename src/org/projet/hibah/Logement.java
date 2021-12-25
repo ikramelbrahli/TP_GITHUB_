@@ -1,7 +1,7 @@
 ackage org.projet.beans;
 
 import java.util.Date;
-import java.util.List;
+import java.util.List; //comment
 
 public class Logement extends Proprietaire {
 private int id_logement ;
